@@ -1,0 +1,15 @@
+﻿@model IEnumerable<APISampleWebSite.Models.Department>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Departments</h2>
+<ul>
+
+    @foreach (APISampleWebSite.Models.Department item in Model)
+    {
+        <li>@item.id, @item.code, @item.name</li>
+    }
+
+</ul>
+

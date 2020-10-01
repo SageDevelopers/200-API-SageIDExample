@@ -1,0 +1,14 @@
+﻿@model IEnumerable<APISampleWebSite.Models.Site>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Sites</h2>
+<ul>
+
+    @foreach (APISampleWebSite.Models.Site site in Model)
+    {
+        <li>@site.company_id, @site.company_name, @site.site_id, @site.site_name</li>
+    }
+
+</ul>
